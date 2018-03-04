@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'scrapy_xiazaizhijia.spiders'
 ITEM_PIPELINES = {
    'scrapy.pipelines.images.ImagesPipeline': 1,
 }
-IMAGES_STORE = 'A'
+IMAGES_STORE = '/home/redwolf/wold'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_xiazaizhijia (+http://www.yourdomain.com)'
