@@ -17,7 +17,7 @@ ITEM_PIPELINES = {
    'scrapy_xiazaizhijia.pipelines.MyImagesPipeline': 1,
 }
 
-IMAGES_STORE = '../../scrapy_xiazaizhijia'
+IMAGES_STORE = '../../scrapy_xiazaizhijia/picture'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_xiazaizhijia (+http://www.yourdomain.com)'
