@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a92ccd20-50c4-465a-a1fe-8cc749227ea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/scrapy_xiazaizhijia/pipelines.py" afterPath="$PROJECT_DIR$/scrapy_xiazaizhijia/pipelines.py" />
+      <change beforePath="$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py" afterPath="$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,17 +33,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -58,8 +58,8 @@
       <file leaf-file-name="xiazaizhijia.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="257">
+              <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -88,11 +88,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/run.py" />
-        <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/settings.py" />
         <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/items.py" />
         <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/pipelines.py" />
+        <option value="$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py" />
       </list>
     </option>
   </component>
@@ -557,16 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -577,10 +567,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/spiders/xiazaizhijia.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy_xiazaizhijia/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

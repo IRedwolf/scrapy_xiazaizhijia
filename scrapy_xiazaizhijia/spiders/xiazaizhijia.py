@@ -27,6 +27,7 @@ class XiazaizhijiaSpider(scrapy.Spider):
         item['image_urls'] = []
         down_load = response.css('.sel-size a:nth-child(2)::attr(href)').extract_first(default='N\A')
         item['image_urls'].append(down_load)
+        item ['name'] = response.css('div.main-title h1::text').extract()
         yield item
 
 
