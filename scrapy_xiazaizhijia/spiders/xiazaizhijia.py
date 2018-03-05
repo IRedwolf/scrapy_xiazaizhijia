@@ -2,17 +2,17 @@
 import scrapy
 from ..items import ScrapyXiazaizhijiaItem
 from scrapy.linkextractors import LinkExtractor
+from scrapy import Request
+
 class XiazaizhijiaSpider(scrapy.Spider):
     name = 'xiazaizhijia'
     allowed_domains = ['xiazaizhijia.com']
     start_urls = ['http://www.xiazaizhijia.com/bizhi/mn/']
-    image_urls = []
 
     def parse(self, response):
         # 解析当期页的url
         le = LinkExtractor(restrict_css='div.wp-list dt a')
         for link in le.extract_links(response):
-            print(link.url)
             yield scrapy.Request(link.url, callback=self.parse_item)
 
         # 解析下一页的url
@@ -27,7 +27,6 @@ class XiazaizhijiaSpider(scrapy.Spider):
         item['image_urls'] = []
         down_load = response.css('.sel-size a:nth-child(2)::attr(href)').extract_first(default='N\A')
         item['image_urls'].append(down_load)
-        item['name'] = response.css('.main-title h1::text').extract_first()
         yield item
 
 

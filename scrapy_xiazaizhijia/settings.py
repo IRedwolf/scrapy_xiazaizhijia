@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from os.path import dirname
 # Scrapy settings for scrapy_xiazaizhijia project
 #
 # For simplicity, this file contains only settings considered important or
@@ -10,19 +10,20 @@
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'scrapy_xiazaizhijia'
-
 SPIDER_MODULES = ['scrapy_xiazaizhijia.spiders']
 NEWSPIDER_MODULE = 'scrapy_xiazaizhijia.spiders'
+
 ITEM_PIPELINES = {
-   'scrapy.pipelines.images.ImagesPipeline': 1,
+   'scrapy_xiazaizhijia.pipelines.MyImagesPipeline': 1,
 }
-IMAGES_STORE = '/home/redwolf/wold'
+
+IMAGES_STORE = '../../scrapy_xiazaizhijia'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapy_xiazaizhijia (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+#ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
