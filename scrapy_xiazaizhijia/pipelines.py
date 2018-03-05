@@ -2,7 +2,7 @@
 
 
 from scrapy.pipelines.images import ImagesPipeline
-
+from scrapy.http import Request
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
@@ -11,6 +11,10 @@ from scrapy.pipelines.images import ImagesPipeline
 
 class MyImagesPipeline(ImagesPipeline):
 
+    def get_media_requests(self, item, info):
+        for image_url in item['image_urls']:
+            yield Request(image_url, meta={'item': item})
+
     def file_path(self, request, response=None, info=None):
-        image_guid = request.url.split('/')[-1][10:]
-        return u'/%s' % (image_guid)
+        item = request.meta['item']
+        return u'/%s.jpg' % (item['name'][0])
