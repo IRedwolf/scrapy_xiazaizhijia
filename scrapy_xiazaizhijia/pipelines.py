@@ -17,4 +17,5 @@ class MyImagesPipeline(ImagesPipeline):
 
     def file_path(self, request, response=None, info=None):
         item = request.meta['item']
+        print('downloading %s.jpg' % item['name'][0])
         return u'/%s.jpg' % (item['name'][0])
